@@ -26,16 +26,17 @@
 .announcementContainer .title {
     font-family: 'League Spartan', sans-serif;
     font-weight: bold;
-    font-size: 57px;
-    margin: 20px 0px;
+    font-size: 37px;
+    margin: 10px 0px;
     margin-top: 40px;
 }
 
 .announcementContainer .content {
     font-family: 'Aileron', sans-serif;
     font-size: 32px;
-    margin: 4px 20px;
+    margin: 0px 20px;
     padding: 20px;
+    text-align: center;
 }
 
 .announcementContainer .footer {
@@ -43,4 +44,116 @@
     font-size: 16px;
     margin: 4px 20px;
     padding: 20px;
+    text-align: center;
+}
+
+.image-ads {
+    width: 200px;
+    color: white;
+    fill: white;
+    stroke: white;
+    transform: rotateY(180deg) scale(0.7);
+    opacity: 0.5;
+    margin: 20px 0px;
+}
+
+.text-lg {
+    font-family: 'Aileron', sans-serif;
+    font-size: 57px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+
+.text-md {
+    font-family: 'Aileron', sans-serif;
+    font-size: 32px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+
+.text-sm {
+    font-family: 'Aileron', sans-serif;
+    font-size: 18px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+
+.text-xs {
+    font-family: 'Aileron', sans-serif;
+    font-size: 12px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+
+@keyframes text-in {
+    0% {
+        opacity: 0;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes image-ads-in {
+    0% {
+        opacity: 0.2;
+        transform: rotateY(180deg) scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(180deg) scale(1.1);
+    }
+}
+
+.text-lg,
+.text-md,
+.text-sm,
+.text-xs {
+    opacity: 0;
+    animation: text-in ease 2s forwards;
+}
+
+.image-ads {
+    animation: image-ads-in ease-in-out 1s alternate-reverse infinite;
+}
+
+.text-color-primary {
+    color: #007bff;
+}
+
+.text-color-secondary {
+    color: #6c757d;
+}
+
+.text-color-success {
+    color: #28a745;
+}
+
+.text-color-danger {
+    color: #dc3545;
+}
+
+.text-color-warning {
+    color: #ffc107;
+}
+
+.text-color-info {
+    color: #17a2b8;
+}
+
+.text-color-light {
+    color: #f8f9fa;
+    /* Asegúrate de que este color sea legible según el fondo donde se use */
+}
+
+.text-color-dark {
+    color: #343a40;
+}
+
+.text-weight-bold {
+    font-weight: bold;
 }

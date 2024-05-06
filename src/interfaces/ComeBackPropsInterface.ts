@@ -1,5 +1,8 @@
 interface ComeBackPropsInterface {
-    time: number
+    time: number;
+    content?: string;
+    footer?: string;
+    title?: string;
 }
 
 export default ComeBackPropsInterface;

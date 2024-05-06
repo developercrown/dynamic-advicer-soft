@@ -15,54 +15,66 @@ const data: Array<DataResponseType> = [
         image: "./assets/images/aviso-icon.png",
         payload: {
             "title": "Comunicado Importante",
-            "content": "<<text>><<lg>>Querida comunidad Universitaria,<<jump>><<text>><<sm>>se les comunica que este departamento trabaja en un horario de<<jump>><<text>><<md>>8:00 a 15:00 de lunes de miercoles y viernes, jueves y sabado de 8:00 a 14:00, <<jump>><<text>><<lg>>Agradecemos su compre",
-            "footer": "<<text>><<lg>>Atentamente,<<jump>><<text>><<sm>Departamento de Sistemas y Tecnologías de la Información"
-        },
-        scheme: "info",
-        once: false,
-        duration: 60
-    },
-    {
-        type: "reglas"
-    },
-    {
-        type: "hora"
-    },
-    {
-        type: "comeback",
-        payload: {
-            "time": 5
-        },
-        duration: 20
-    },
-    {
-        type: "promocional",
-        image: "./assets/images/promocional.png",
-        scheme: "warning",
-        qr: "https://plataforma.upn164.edu.mx",
-        once: false
-    },
-    {
-        type: "convocatoria",
-        image: "./assets/images/logo-lie.png",
-        payload: {
-            "title": "Licenciatura en Intervención Educativa",
-            "content": "<<text>><<lg>>Modalidades ( En Línea, Mixta, Presencial )",
-            "footer": "<<text>><<sm>Educar para transformar"
+            "content": "<<text>><<md>>Querida comunidad Universitaria,<<jump>><<text>><<md>>se les comunica que este departamento trabaja en un horario de<<jump>><<text>><<md>><<bold>><<color-warning>>Lunes de miercoles y viernes de 8:00 a 15:00,<<jump>><<text>><<color-warning>><<md>><<bold>>Jueves y sabado de 8:00 a 14:00, <<jump>><<text>><<sm>>Agradecemos su comprensión.",
+            "footer": "<<text>><<md>><<bold>>Atentamente,<<jump>><<text>><<sm>>Departamento de Sistemas y Tecnologías de la Información"
         },
         scheme: "primary",
-        qr: "https://upn164.edu.mx /lie",
-        once: false
+        once: false,
+        duration: 6
     },
     {
-        type: "network",
+        type: "aviso",
+        image: "./assets/images/aviso-icon.png",
         payload: {
-            "wpa": "Alumnos-UPN164",
-            "wkey": "universidad164Zitacuaro"
+            "title": "Cuidado con lo que haces",
+            "content": "<<text>><<md>><<color-light>>Si detectamos que haces mal uso de las instancias te vamos a meter ala carcel",
+            "footer": "<<text>><<md>><<color-light>>Atentamente,<<jump>><<text>><<color-light>><<sm>>Departamento de Sistemas y Tecnologías de la Información"
         },
-        once: true,
-        expires: 5
-    }
+        scheme: "secondary",
+        once: false,
+        duration: 8
+    },
+    // {
+    //     type: "reglas"
+    // },
+    // {
+    //     type: "hora"
+    // },
+    // {
+    //     type: "comeback",
+    //     payload: {
+    //         "time": 5
+    //     },
+    //     duration: 20
+    // },
+    // {
+    //     type: "promocional",
+    //     image: "./assets/images/promocional.png",
+    //     scheme: "warning",
+    //     qr: "https://plataforma.upn164.edu.mx",
+    //     once: false
+    // },
+    // {
+    //     type: "convocatoria",
+    //     image: "./assets/images/logo-lie.png",
+    //     payload: {
+    //         "title": "Licenciatura en Intervención Educativa",
+    //         "content": "<<text>><<lg>>Modalidades ( En Línea, Mixta, Presencial )",
+    //         "footer": "<<text>><<sm>Educar para transformar"
+    //     },
+    //     scheme: "primary",
+    //     qr: "https://upn164.edu.mx /lie",
+    //     once: false
+    // },
+    // {
+    //     type: "network",
+    //     payload: {
+    //         "wpa": "Alumnos-UPN164",
+    //         "wkey": "universidad164Zitacuaro"
+    //     },
+    //     once: true,
+    //     expires: 5
+    // }
 ]
 
 export default data
